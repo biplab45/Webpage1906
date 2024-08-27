@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BS Photography</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #fafafa;
+        }
+
+        header {
+            background: #222;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+            display: inline-block;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00bfff;
+            transform: scale(1.1);
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: #00bfff;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s;
+        }
+
+        nav ul li a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        .hero {
+            background: url('https://github.com/user-attachments/assets/c7755b1d-8129-4755-a6da-99001b9c1cad') no-repeat center center/cover;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transform: scale(1);
+            transition: transform 0.5s;
+        }
+
+        .hero-content:hover {
+            transform: scale(1.05);
+        }
+
+        .hero-content h2 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .hero-content p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: #00bfff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .cta-button:hover {
+            background: #00bfff;
+            transform: scale(1.1);
+        }
+
+        .features {
+            padding: 60px 20px;
+            text-align: center;
+            background: #fff;
+        }
+
+        .features h2 {
+            margin: 0 0 20px;
+            font-size: 2.5em;
+        }
+
+        .features .feature-item {
+            margin: 20px;
+            display: inline-block;
+            width: calc(33% - 40px);
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .features .feature-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .features .feature-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .features .feature-item h3 {
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+
+        .features .feature-item p {
+            font-size: 1em;
+            color: #666;
+        }
+
+        footer {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>BS Photography</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Capturing Moments, Creating Memories</h2>
+            <p>Welcome to BS Photography - where every picture tells a story.</p>
+            <a href="gallery.html" class="cta-button">View Portfolio</a>
+        </div>
+    </section>
+    
+    <section class="features">
+        <h2>Our Services</h2>
+        <div class="feature-item">
+            <img src="https://github.com/user-attachments/assets/2f6b3db6-41ab-4b5b-9934-6747b09c9e47" alt="Service 1">
+            <h3>Wedding Photography</h3>
+            <p>Capturing the most beautiful moments of your special day.</p>
+        </div>
+        <div class="feature-item">
+            <img src="https://github.com/user-attachments/assets/54254fe8-d981-4ccb-84fb-0a3fad120446" alt="Service 2">
+            <h3>Event Photography</h3>
+            <p>Documenting all the exciting events and occasions.</p>
+        </div>
+        <div class="feature-item">
+            <img src="https://github.com/user-attachments/assets/1942c0ce-4ec6-4fd0-a47e-70d9d019b5bb" alt="Service 3">
+            <h3>Portrait Photography</h3>
+            <p>Creating stunning and memorable portraits.</p>
+        </div>
+        <div class="feature-item">
+            <img src="https://github.com/user-attachments/assets/d5844eaf-e4c9-42ee-a022-f9942f21b1bb" alt="Service 3">
+            <h3>Landscape Photography</h3>
+            <p>Experience the beauty of naure .</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy;All rights reserved by Biplab Goswami</p>
+    </footer>
+
+    <script>
+        // JavaScript for additional animations or interactivity
+        document.addEventListener('DOMContentLoaded', () => {
+            const ctaButton = document.querySelector('.cta-button');
+            
+            ctaButton.addEventListener('mouseover', () => {
+                ctaButton.style.transform = 'scale(1.1)';
+            });
+
+            ctaButton.addEventListener('mouseout', () => {
+                ctaButton.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
