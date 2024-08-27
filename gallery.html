@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Photography Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+         background: url(https://github.com/user-attachments/assets/ff60fd4b-fba4-4496-addb-1a704d52e5fd);
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #090909;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .gallery {
+            
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.15);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            border-top: 5px solid #555;
+        }
+    
+        .fa-instagram {
+            font-size: 20px;
+            color: #ffffff;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Gallery</h1>
+        <div class="gallery">
+            <img src="https://github.com/user-attachments/assets/1ab28a44-2bb3-4e0d-ae49-6a323ce1a8b5" alt="Sample Photo 1">
+            <img src="https://github.com/user-attachments/assets/778e8b6d-80ef-4b59-9ff7-a853c967c583" alt="Sample Photo 2">
+            <img src="https://github.com/user-attachments/assets/46f1f4ce-04aa-4eeb-a10b-de7f39c57a40" alt="Sample Photo 3">
+            <img src="https://github.com/user-attachments/assets/6a393b14-271b-437c-b823-b1c8f7bac0ff" alt="Sample Photo 4">
+            <img src="https://github.com/user-attachments/assets/fa8df08b-cfd5-4e67-8a61-2f56365f908e" alt="Sample Photo 5 ">
+            <img src="https://github.com/user-attachments/assets/b2f37475-8f1a-477f-a44f-14cac92f6367" alt="Sample Photo 6">
+            <img src="https://github.com/user-attachments/assets/f601b5e6-5a25-453a-80b7-c43d69584774" alt="Sample Photo 7">
+            <img src="https://github.com/user-attachments/assets/b3e7acd3-0fdc-49c9-905f-2fa4cf7492fc" alt="Sample Photo 8">
+            <img src="https://github.com/user-attachments/assets/43733323-0629-4b33-9a15-560599ebecfc" alt="Sample Photo 9">
+            <img src="https://github.com/user-attachments/assets/75fc42ec-c12d-4189-915e-478734cb1634" alt="Sample Photo 10">
+            <img src="https://github.com/user-attachments/assets/29721ac6-015e-4c83-93f9-0b1f8c3ad314" alt="Sample Photo 11">
+            <img src="https://github.com/user-attachments/assets/0ceafc6c-1665-454c-afde-b57ee33cbdd5" alt="Sample Photo 12">
+
+            
+
+        </div>
+    </div>
+    <footer>
+        <p>Follow me on social media:
+            <a href="https://www.instagram.com/bs_photography9609/" target="_blank"
+            <i class="fab fa-instagram"></i> </a></p>
+    </footer>
+</body>
+</html>
